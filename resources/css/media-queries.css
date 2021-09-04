@@ -1,0 +1,123 @@
+/* big Tablets to 1200px */
+
+@media only screen and (max-width: 1023px){
+
+}
+
+
+
+/* small Tablets to big Tablets from 768px to 1023px*/
+
+@media only screen and (max-width: 1023px){
+    .headings-top {
+        width: 60%;
+    }
+
+    .delivery-section__newsletter{
+        display: inline-grid;
+        padding: 30px 0;
+    }
+
+    .delivery-section__newsletter-input {
+        width: 400px;
+        border-radius: 200px;
+        padding: 12px;
+    }
+
+    .newsletter__button {
+        border-radius: 200px;
+    }
+
+    .beauty-section img {
+        width: 270px;
+        height: 400px;        
+        right: 10%;
+    }
+
+    .clients-section__photo img{
+        width: 240px;
+    }
+
+}
+    
+
+
+/* small Phones to small Tablets from 480px to 767px*/
+
+@media only screen and (max-width: 767px){
+    .headings-top {
+        width: 60%;
+    }
+
+    .delivery-section__newsletter {
+        display: inline-grid;
+        padding: 30px 0;
+    }
+
+    .delivery-section__newsletter-input {
+        width: 400px;
+        border-radius: 200px;
+        padding: 12px;
+    }
+
+    .newsletter__button {
+        border-radius: 200px;
+    }
+
+    .beauty-section img {
+        width: 270px;
+        height: 400px;        
+        right: 10%;
+    }
+
+    .clients-section__photo img{
+        width: 180px;
+    }
+
+    .mobile-nav{
+        display: inline-block;
+    }
+
+    .main-nav{
+        float: left;        
+    }
+
+    .main-nav li {
+        display: block;
+    }
+}
+
+
+
+/* small Phones from 0 to 480px*/
+
+@media only screen and (max-width: 480px){
+    
+    h1{
+        font-size: 160%;
+    }
+    .section-features div .col{
+        padding: 10px;
+    }
+    .headings-top {
+        margin-top: 10%
+    }
+    .section-options div.clearfix {
+        text-align: center;
+    }
+    .beauty-section img {
+        display: none;
+    }
+
+    .beauty-section p{
+        margin-top: 85px;
+        margin-right: 20px;
+    }
+    .delivery-section__newsletter-form {
+        padding: 0;
+    }
+    .delivery-section__newsletter-input {
+        width: 270px;
+    }
+    
+}

@@ -1,0 +1,561 @@
+/*----------------------------------*/
+/*  BASIC SET UP */
+/*----------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* change it to html if the css doesn't work */
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1;}
+.clearfix:after {
+    content:'.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*----------------------------------*/
+/* HEADER */
+/*----------------------------------*/
+
+header {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.85)), url('../images/model.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    color: white;
+    float: left;
+    margin: 20px;
+    text-decoration: none;
+}
+
+
+.main-nav{
+    float: right;    
+    list-style: none;
+    margin: 20px;
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 85%;
+    text-transform: uppercase;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #ebae6d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+/* STICKY NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #191919;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: white;   
+}
+
+/* MOBILE NAV */
+
+.mobile-nav{    
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+    color: white;
+    font-size: 200%;  
+}
+
+
+
+
+/*----------------------------------*/
+/* HEADINGS */
+/*----------------------------------*/
+
+h1,
+h2 {    
+    font-size: 200%;    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h1 {
+    color: white;
+    font-weight: 300;
+}
+
+h2 {
+    color: #321f28;
+    font-weight: 500;
+    text-align: center;    
+    padding:60px 0 70px 0;
+}
+
+h2:after{
+    display: block;
+    height: 4px;
+    background-color: #94525a;
+    content: " ";
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.section-features{
+    margin: 20px 0 100px;
+}
+
+.section-features div h3 {
+    font-weight: 400;
+}
+
+.box {
+    text-align: center;
+}
+
+.icon-big{
+    font-size: 160%;  
+    margin-bottom: 10px;
+}
+
+.beauty-section{
+    background-color: #ebae6d;
+    color: white;
+    text-align: center;
+    margin: 50px 0 0px 0;
+    padding: 25px 15px;
+    position:relative;
+    height: 480px;
+}
+
+.beauty-section img {
+    width: 350px;
+    height: 490;
+    position: absolute;
+    right: 20%;
+    top: -13%;
+    -webkit-filter: drop-shadow(10px 12px 20px rgba(0,0,0,0.5));
+}
+
+.beauty-section p {
+    text-align: right;
+    margin-top: 90px;
+    margin-right: -20px;
+}
+
+.beauty-section__signature {
+   font-family: 'Nothing You Could Do', cursive;
+   font-size: 150%;
+   margin-top: 30px;
+}
+
+.delivery-section{
+    background-color: #321f28;;
+    color: white;
+    text-align: center;
+    margin: 0px 0 25px 0;
+    padding: 25px 15px;
+}
+
+.delivery-section h3{
+    font-weight: 300;
+}
+
+.delivery-section p {
+    font-size: 80%;
+    padding:25px 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.delivery-section span{
+    border-bottom: 1px solid white;   
+     padding: 5px;
+     
+}
+
+.delivery-section__newsletter {
+    display: inline-flex;
+    padding: 30px;
+}
+
+.delivery-section__newsletter-button {
+    padding: 10px 30px;
+    border-radius: 0px 200px 200px 0px;
+    border: 1px solid #e79e4f;
+    color: #e79e4f;
+    background-color: transparent;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delivery-section__newsletter-button:hover,
+.delivery-section__newsletter-button:active {
+   background-color: #3c2530;
+}
+
+.delivery-section__newsletter-input{    
+    width: 450px;
+    border-radius: 200px 0px 0px 200px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.newsletter__button:hover,
+.newsletter__button:active {
+    /* background-color: #e59640;
+    border: 1px solid #e59640; */
+}
+
+.delivery-section__newsletter-form {
+    padding: 50px;
+}
+
+.delivery-box{
+    padding: 15px;
+}
+
+.section-features div .col {
+    color: #a05344;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-row {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.headings-top {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headings-top__wrap{
+    display: inline;    
+}
+
+/*----------------------------------*/
+/* SECTION CLIENTS */
+/*----------------------------------*/
+.clients-section__row {
+    max-width: none;
+}
+
+.clients-section__show {
+   list-style: none;
+   width: 100%;
+   margin: 10px 0;
+}
+
+.clients-section__show li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.clients-section__photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.clients-section__photo img {
+    width: 380px;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.7;
+}
+
+.clients-section__photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/*----------------------------------*/
+/* SECTION OPTIONS */
+/*----------------------------------*/
+.options-section h3{
+    font-weight: 400;
+    margin: 15px 15px 25px 15px;
+}
+
+.options-section p{
+    color: #555;
+    margin: 15px;
+}
+.options-section img{
+    width: 380px;
+    height: auto;
+}
+
+.options-section__discounts {
+    margin: 0px;
+}
+
+.options-section div .col {
+    color: #a05344;
+}
+
+/*----------------------------------*/
+/* SECTION STORES */
+/*----------------------------------*/
+.store-section{
+    margin: 15px 0 65px;;
+}
+
+.store-section__locations{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.store-section__locations a:link, 
+.store-section__locations a:visited {
+    text-decoration: none;
+    color: #e79e4f;
+    font-weight: 400;  
+    transition: color 0.2s;
+}
+
+.store-section__locations a:hover,
+.store-section__locations a:active {
+    color: #e38e31
+}
+
+.small-icons{
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    vertical-align: middle;
+}
+
+/*----------------------------------*/
+/* SECTION TESTIMONIALS */
+/*----------------------------------*/
+.testimonials-section {
+    margin: 20px;
+}
+.section-testimonials h2 {
+    color: #ffffffeb;
+    
+}
+
+.testimonials-section__wrapper {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url(../images/makeup.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 50px 80px;
+    color: #ffffffd9;
+}
+
+
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -3px;
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+/*----------------------------------*/
+/* SECTION CONTACT FORM*/
+/*----------------------------------*/
+.contact-form-section {
+    margin: 0 0 70px;
+}
+
+.contact-form-section__message {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form-section__message form {
+    padding: 0px!important;
+}
+
+
+.contact-form-section__message,
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #e9a65e;
+}
+
+/*----------------------------------*/
+/* BUTTONS */
+/*----------------------------------*/
+a {
+    margin: 10px;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+    background-color: #e79e4f;
+    border: 1px solid #e79e4f;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color: #e59640;
+    border: 1px solid #e59640;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e79e4f;
+    color: #e79e4f;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #e59640;
+    color:  #e59640;
+}
+
+
+*:focus{outline: none;}
+
+/*----------------------------------*/
+/* FOOTER */
+/*----------------------------------*/
+
+footer{
+    background-color: #191919;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;  
+    line-height: 1.4;
+    display: inline-flex;
+    padding: 30px;
+}
+
+.social-media-icons {
+    font-size: 150%;
+    /* color:  #e79e4f; */
+    color:  rgb(104 104 104);
+    transition: color 0.2s;
+}
+
+.social-media-icons:hover,
+.social-media-icons:active {
+   /* color: #e59640; */
+    color:  #e59640;
+}
+
+.social-media {
+    list-style: none;
+    float: right;
+    display: inline-flex;
+    padding: 30px;
+}
+
+.footer-nav li a {
+    margin: 25px 0;
+    color: rgb(143 143 143);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 37px;
+    transition: color 0.2s;
+    font-size: 80%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+    color:  #e79e4f;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+    font-size: 75%;
+}
+
+
+/* @media only screen and (max-width: 946px){
+    a {
+     margin: 10px;
+   }
+ } */

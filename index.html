@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <title>IK&reg; Beauty Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="">
+            <!-- add class="main=navigation" display: flex instead of float: right/left -->
+            <div class="row">
+                <span><a href="#" class="logo">IK&reg; Beauty</a></span>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a class="aboutus" href="#">About us</a></li>
+                    <li><a class="options" href="#">Shop</a></li>
+                    <li><a class="contactus" href="#">Contacts</a></li>
+                </ul>
+                <a class="mobile-nav js--nav-icon" href=""><ion-icon name="reorder-four-outline"></ion-icon></a>
+            </div>
+            
+        </nav>
+        <div class="headings-top">
+            <div class="headings-top__wrap">
+                <h1>High Quality </h1>
+                <h1>Parabens Free</h1>
+                <h1>Sulfate Free</h1>
+            </div>
+            <a class="btn btn-full" href="#">Beauty Shop</a>
+            <a class="btn btn-ghost " href="#">Beauty Mission</a>
+        </div>
+    </header>
+
+    <section class="section-features js--section-features">
+        <div class="row">
+            <h2>Our advantages</h2>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-4 box animation">
+                <ion-icon name="checkbox-outline" class="icon-big"></ion-icon>
+                </ion-icon>
+                <h3>HIGH QUALITY</h3>
+            </div>
+
+
+            <div class="col span-1-of-4 box">
+                <ion-icon name="checkbox-outline" class="icon-big"></ion-icon>
+                <h3>PARABENS FREE</h3>
+            </div>
+
+
+            <div class="col span-1-of-4 box">
+                <ion-icon name="checkbox-outline" class="icon-big"></ion-icon>
+                <h3>SULFATE FREE</h3>
+            </div>
+
+
+            <div class="col span-1-of-4 box">
+                <ion-icon name="checkbox-outline" class="icon-big"></ion-icon>
+                <h3>GLUTEN FREE</h3>
+            </div>
+        </div>
+    </section>
+    <section class="beauty-section">
+        <div class="row">
+            <div class="col span-1-of-2 ">
+                <p>
+                    &ldquo; Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                    model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).&rdquo;
+                </p>
+                <p class="beauty-section__signature">
+                    IK Beauty
+                </p>
+            </div>
+            <div class="col span-1-of-2 ">
+                <img width="350" height="490" src="/resources/images/beauty_girl.jpg" alt="beauty_girl">
+            </div>
+        </div>
+    </section>
+    <section class="delivery-section">
+        <div class="row">
+            <form action="/action_page.php" class="delivery-section__newsletter-form">
+                <label for="fname">Don't miss our top deals. Get your personalized offers. </label><br>
+                <div class="delivery-section__newsletter">
+                    <input class="delivery-section__newsletter-input" type="email" id="email" name="email"
+                        placeholder="your@email.com"><br>
+
+                    <button class="btn delivery-section__newsletter-button" type="submit">Subscribe me </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="options-section">
+        <div class="row">
+            <h2>Different Options</h2>
+            <div class="col span-1-of-2 options-section__discounts">
+                <img src="/resources/images/model-3-2.jpg" alt="Gift">
+            </div>
+            <div class="col span-1-of-2 clearfix">
+                <h3>Get more. Save more.</h3>
+                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                    text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+                    versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour
+                    and the like).</p>
+                <a class="btn btn-ghost" href="#">I want a Gift Voucher</a>
+                <a class="btn btn-full" href="#">Monthly Subscription</a> <br>
+                <a class="btn btn-full" href="#">Quaterly Subscription</a> <br>
+                <a class="btn btn-full" href="#">Six Months Subscription</a> <br>
+            </div>
+        </div>
+    </section>
+    <section class="clients-section">
+        <div class="row clients-section__row">
+            <h2>Our Happy clients </h2>
+            <ul class="clients-section__show clearfix">
+                <li>
+                    <figure class="clients-section__photo">
+                        <img src="resources/images/andrea.jpg" alt="Andrea">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="clients-section__photo">
+                        <img src="resources/images/kate.jpg" alt="Kate">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="clients-section__photo">
+                        <img src="resources/images/mary.jpg" alt="Mary">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="clients-section__photo">
+                        <img src="resources/images/daniel.jpg" alt="Daniel">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="store-section">
+        <div class="row">
+            <h2>Our Physical Stores </h2>
+            <div class="col span-1-of-4 store-section__locations">
+                <!-- <ion-icon name="business-outline"></ion-icon> -->
+                <h3>London</h3><br>
+                <ion-icon name="people-outline" class="small-icons"></ion-icon>
+                <span>1600+ happy clients</span><br>
+                <a href="#">@ikbeauty_ln</a>
+            </div>
+            <div class="col span-1-of-4 store-section__locations">
+                <h3>Paris </h3><br>
+                <ion-icon name="people-outline" class="small-icons"></ion-icon>
+                1340+ happy clients<br>
+                <a href="#">@ikbeauty_ps</a>
+            </div>
+            <div class="col span-1-of-4 store-section__locations">
+                <h3>Tokyo </h3><br>
+                <ion-icon name="people-outline" class="small-icons"></ion-icon>
+                1550+ happy clients<br>
+                <a href="#">@ikbeauty_tk</a>
+            </div>
+            <div class="col span-1-of-4 store-section__locations">
+                <h3> New York</h3> <br>
+                <ion-icon name="people-outline" class="small-icons"></ion-icon>
+                980+ happy clients<br>
+                <a href="#">@ikbeauty_ny </a>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials-section">
+
+        <div class="testimonials-section__wrapper">
+            <div class="row">
+                <h2>our testimonials</h2>
+                <div class="col span-1-of-3">
+                    <blockquote>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature from 45 BC, making it over 2000 years old. </blockquote>
+                    <cite>Tiernan Ritter</cite>
+
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature from 45 BC, making it over 2000 years old. </blockquote>
+                    <cite>Umayr Gill</cite>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <blockquote>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                        piece of classical Latin literature from 45 BC, making it over 2000 years old. </blockquote>
+                    <cite>Bert Ochoa</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form-section">
+        <div class="row">
+            <h2>Drop us a message</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" class="contact-form-section__message" required>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="your@email.com" class="contact-form-section__message"
+                            required>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="Search Engine">Search Engine</option>
+                            <option value="Friends">Friends</option>
+                            <option value="Advert">Advert</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="">Message</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="text-area" id="text-area" cols="30" rows="5" class="contact-form-section__message"></textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="">&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="submit">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2 ">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Mission</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-media">
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook" class="social-media-icons"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-instagram" class="social-media-icons"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter" class="social-media-icons"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-tiktok" class="social-media-icons"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2021 IK Beauty. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/resources/js/scripts.js"></script>
+    <script src="/resources/js/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+</body>
+
+</html>
